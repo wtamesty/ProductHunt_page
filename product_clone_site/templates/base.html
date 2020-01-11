@@ -52,6 +52,10 @@
 
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
+
+                  <a class="nav-link" href="{% url 'create' %}"><span class="oi oi-plus"></span> </a>
+                </li>
+                <li class="nav-item ">
                   <a class="nav-link" href="javascript:{document.getElementById('logout_1').submit()}">Logout </a>
                   <form id="logout_1" method="POST" action="{% url 'logout' %}" >
                     {% csrf_token %}
